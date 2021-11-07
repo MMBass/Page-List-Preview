@@ -5,7 +5,7 @@
 */
 /*
 Plugin Name: Page List Preview
-Plugin URI: https://github.com/MMBass/Page_List_Preview_wordpress_plugin
+Plugin URI:  Plugin URI: https://github.com/MMBass/Page-List-Preview
 Description: Image preview for every page in wp admin pages list, no need to click 'View' anymore
 Author: Mendi Bass
 Author URI: https://github.com/MMBass

@@ -10,11 +10,12 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 4.0
 Tested up to: 5.8
-Stable tag: 1.0.0 
+Stable tag: 2.0.0 
 
 == Description ==
 
-Image preview for every page in wp admin pages list, no need to click 'View' anymore
+Image preview for every page in wp admin pages list, no need to click 'View' anymore.
+You can resize the frame view to feet with other plugins columns.
 
 == Installation ==
 
@@ -38,6 +39,8 @@ Or:
 == Changelog ==
 = 1.0.0 =
 * First upload
+= 2.0.0 =
+* Resizable windows
 
 == Upgrade Notice ==
 

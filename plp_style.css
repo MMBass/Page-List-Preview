@@ -1,12 +1,18 @@
 .plp-container{
     width:400px;
     height:250px;
+
+    min-height: 100px;
+    min-width: 200px;
+
     padding-top: 10px;
     overflow: hidden;
-    pointer-events: none;
 }
 
 .plp-iframe{
+    pointer-events: none;
+    resize: both;
+
     position: relative;
     border: 1px solid black;
     height: 850px;
@@ -26,7 +32,9 @@
 @media screen and (max-width: 1300px) {
     .plp-iframe {
         height: 720px;
+        max-height: 720px;
         width: 1110px;
+        max-width: 1110px;
     }
 }
 

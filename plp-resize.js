@@ -3,14 +3,16 @@ jQuery(document).ready(function () {
         window.localStorage.setItem("plp-resize", JSON.stringify({ w: "1310" + "px", h: "850" + "px" }));
     }
 
-    let plpResizableIframe = document.querySelectorAll(".plp-resizable-iframe");
+    let plpResizable = document.querySelectorAll(".plp-resizable");
 
-    plpResizableIframe.forEach((e) => {
-        // e.addEventListener("mouseover", () => { PlpSaveSize(e) });
+    plpResizable.forEach((e) => {
         e.addEventListener("mousedown", () => { PlpSaveSize(e) });
         e.addEventListener("mouseup", () => { PlpSaveSize(e) });
+        e.addEventListener("mouseleave", () => { PlpSaveSize(e) });
+        e.addEventListener("mouseout", () => { PlpSaveSize(e) });
 
-        // e.parentElement.addEventListener("mouseover", () => { PlpSaveSize(e) });
+        e.parentElement.addEventListener("mouseleave", () => { PlpSaveSize(e) });
+        e.parentElement.addEventListener("mouseout", () => { PlpSaveSize(e) });
         e.parentElement.addEventListener("mousedown", () => { PlpSaveSize(e) });
         e.parentElement.addEventListener("mouseup", () => { PlpSaveSize(e) });
     });
@@ -20,7 +22,7 @@ jQuery(document).ready(function () {
     }
 
     function PlpResizeAll(c) {
-        plpResizableIframe.forEach((frame) => {
+        plpResizable.forEach((frame) => {
             frame.style.height = c.h;
             frame.style.width = c.w;
         });

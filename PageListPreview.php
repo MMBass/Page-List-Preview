@@ -9,7 +9,7 @@ Plugin URI:  Plugin URI: https://github.com/MMBass/Page-List-Preview
 Description: Image preview for every page in wp admin pages list, no need to click 'View' anymore
 Author: Mendi Bass
 Author URI: https://github.com/MMBass
-Version: 2.0.0
+Version: 2.1.0
 License: GPL v2 or later
 Text Domain: page-list-preview 
 Domain Path: /languages
@@ -56,13 +56,15 @@ function create_plp_pages_column( $column, $post_id ) {
 
     echo '
 	    <div class="plp-container">
-			<iframe
-			    class="plp-iframe plp-resizable-iframe"
-				sandbox="allow-scripts allow-same-origin" 
-				loading="lazy" 
-				scrolling="no"   
-				src="'.esc_url( $plp_page_link ).'">
-			</iframe>
+            <div class="plp-block plp-resizable">
+                <iframe
+                    class="plp-iframe"
+                    sandbox="allow-scripts allow-same-origin" 
+                    loading="lazy" 
+                    scrolling="no"   
+                    src="'.esc_url( $plp_page_link ).'">
+                </iframe>
+	        </div>
 	    </div>
 		';
   }

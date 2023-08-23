@@ -9,8 +9,8 @@ Author: Mendi Bass
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 4.0
-Tested up to: 5.8
-Stable tag: 2.0.0 
+Tested up to: 6.3
+Stable tag: 2.1.0 
 
 == Description ==
 
@@ -41,6 +41,8 @@ Or:
 * First upload
 = 2.0.0 =
 * Resizable windows
+= 2.1.0 =
+* Wp 6.0.3 compatibility, Resizable fixed
 
 == Upgrade Notice ==
 

@@ -9,7 +9,7 @@ Author: Mendi Bass
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 4.0
-Tested up to: 6.3
+Tested up to: 6.7.1
 Stable tag: 2.1.0 
 
 == Description ==

@@ -2,15 +2,17 @@
 
 Contributors: mendibass
 Plugin Name: Page List Preview
-Plugin URI:  Plugin URI: https://github.com/MMBass/Page-List-Preview
+Plugin URI: https://github.com/MMBass/Page-List-Preview
 Tags: edit.php, pages list, pages,preview, quick view
 Author URI: https://github.com/MMBass
 Author: Mendi Bass
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 4.0
-Tested up to: 6.7.1
-Stable tag: 2.1.0 
+Tested up to: 6.8
+Stable tag: 2.2.0
+
+Admin pages list Image preview 
 
 == Description ==
 
@@ -43,6 +45,8 @@ Or:
 * Resizable windows
 = 2.1.0 =
 * Wp 6.0.3 compatibility, Resizable fixed
+= 2.2.0 =
+Wp 6.8 compatibility, Resize max size limit
 
 == Upgrade Notice ==
 

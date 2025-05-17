@@ -2,6 +2,9 @@
     width:400px;
     height:250px;
 
+    max-height: 100%;
+    max-width: 100%;
+
     padding-top: 10px;
     overflow: hidden;
 }
@@ -11,9 +14,9 @@
     resize: both;
 
     position: relative;
-    height: 850px;
-    width: 1310px;
-    
+    height: 849px;
+    width: 1309px;
+
     transform: scale(0.25);
     -moz-transform: scale(0.25);
     -o-transform: scale(0.25);
@@ -23,9 +26,9 @@
     -moz-transform-origin: left top;
     -o-transform-origin: left top;
     -webkit-transform-origin: left top;
-
-    min-height: 200px;
-    min-width: 400px;
+    
+    min-height: 199px;
+    min-width: 399px;
 }
 
 .plp-iframe{

@@ -5,11 +5,11 @@
 */
 /*
 Plugin Name: Page List Preview
-Plugin URI:  Plugin URI: https://github.com/MMBass/Page-List-Preview
+Plugin URI: https://github.com/MMBass/Page-List-Preview
 Description: Image preview for every page in wp admin pages list, no need to click 'View' anymore
 Author: Mendi Bass
 Author URI: https://github.com/MMBass
-Version: 2.1.0
+Version: 2.2.0
 License: GPL v2 or later
 Text Domain: page-list-preview 
 Domain Path: /languages
@@ -22,7 +22,7 @@ if ( !defined( 'ABSPATH' ) ){
 function plp_filter_pages_columns( $columns ) {
     /** Add a 'Preview' Column **/
     $myCustomColumns = array(
-        'Preview' => __( 'Preview')
+        'Preview' => __( 'Preview', 'page-list-preview' )
     );
     $columns = array_merge( $columns, $myCustomColumns );
  
@@ -39,11 +39,11 @@ function plp_add_script_to_admin_pages_list()
     }
      
     // loading css
-    wp_enqueue_style( 'plp_style', plugins_url( 'plp_style.css', __FILE__ ) );
+    wp_enqueue_style( 'plp_style', plugins_url( 'plp_style.css', __FILE__ ), array(), '2.2.0');
 	if(is_rtl()){
-		wp_enqueue_style( 'plp_rtl_style', plugins_url( 'plp_rtl_style.css', __FILE__ ) );
+		wp_enqueue_style( 'plp_rtl_style', plugins_url( 'plp_rtl_style.css', __FILE__ ), array(), '2.2.0' );
 	}
-    wp_enqueue_script( 'plp_resize', plugins_url( 'plp-resize.js', __FILE__ ) );
+    wp_enqueue_script( 'plp_resize', plugins_url( 'plp-resize.js', __FILE__ ),  array(), '2.2.0', true );
 
 }
  
@@ -56,7 +56,8 @@ function create_plp_pages_column( $column, $post_id ) {
 
     echo '
 	    <div class="plp-container">
-            <div class="plp-block plp-resizable">
+            <div class="plp-block plp-resizable"
+             style="max-height: 850px !important; max-width: 1310px !important;">
                 <iframe
                     class="plp-iframe"
                     sandbox="allow-scripts allow-same-origin" 

@@ -9,8 +9,8 @@ Author: Mendi Bass
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 4.0
-Tested up to: 6.8
-Stable tag: 2.2.0
+Tested up to: 6.9
+Stable tag: 2.3.0
 
 Admin pages list Image preview 
 
@@ -46,7 +46,9 @@ Or:
 = 2.1.0 =
 * Wp 6.0.3 compatibility, Resizable fixed
 = 2.2.0 =
-Wp 6.8 compatibility, Resize max size limit
+* Wp 6.8 compatibility, Resize max size limit
+= 2.2.0 =
+* Wp 6.9 compatibility, Bug fix
 
 == Upgrade Notice ==
 

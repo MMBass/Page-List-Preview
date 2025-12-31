@@ -18,7 +18,11 @@ jQuery(document).ready(function () {
     });
 
     if (window.localStorage.getItem("plp-resize") !== null) {
-        PlpResizeAll(JSON.parse(localStorage.getItem("plp-resize")));
+        try {
+            PlpResizeAll(JSON.parse(localStorage.getItem("plp-resize")));
+        } catch (e) {
+            console.error("PLP: Error parsing resize settings", e);
+        }
     }
 
     function PlpResizeAll(c) {
@@ -29,8 +33,12 @@ jQuery(document).ready(function () {
     }
 
     function PlpSaveSize(e) {
-        window.localStorage.setItem("plp-resize", JSON.stringify({ h: e.offsetHeight + "px", w: e.offsetWidth + "px" }));
-        PlpResizeAll({ h: e.offsetHeight + "px", w: e.offsetWidth + "px" });
+        var size = { h: e.offsetHeight + "px", w: e.offsetWidth + "px" };
+        try {
+            window.localStorage.setItem("plp-resize", JSON.stringify(size));
+        } catch (e) {
+            // Handle storage quota exceeded or security errors
+        }
+        PlpResizeAll(size);
     }
 });
-

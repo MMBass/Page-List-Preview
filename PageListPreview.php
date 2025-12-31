@@ -9,7 +9,7 @@ Plugin URI: https://github.com/MMBass/Page-List-Preview
 Description: Image preview for every page in wp admin pages list, no need to click 'View' anymore
 Author: Mendi Bass
 Author URI: https://github.com/MMBass
-Version: 2.2.0
+Version: 2.3.0
 License: GPL v2 or later
 Text Domain: page-list-preview 
 Domain Path: /languages
@@ -32,9 +32,13 @@ function plp_filter_pages_columns( $columns ) {
 function plp_add_script_to_admin_pages_list()
 {
     // $pagenow, is a global variable referring to the filename of the current page
-    global $pagenow;
+    global $pagenow, $post_type;
  
     if ($pagenow != 'edit.php') {
+        return;
+    }
+
+    if ( 'page' !== $post_type ) {
         return;
     }
      

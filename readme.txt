@@ -10,9 +10,9 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 4.0
 Tested up to: 6.9
-Stable tag: 2.3.0
+Stable tag: 2.3.1
 
-Admin pages list Image preview 
+Provides a resizable image preview for the WordPress admin pages list, allowing you to see page content without leaving the list view.
 
 == Description ==
 
@@ -22,7 +22,7 @@ You can resize the frame view to feet with other plugins columns.
 == Installation ==
 
 1. From your WordPress Dashboard go to 'Plugins' > 'Add new' and search for 'Page List Preview'.
-2. Click 'Install Now' under the title of the Call Now Button plugin
+2. Click 'Install Now' under the title of the Page List Preview plugin
 3. Click 'activate'
 4. You're done, now you well see the preview in the pages list, until you deactivate this plugin.
 
@@ -47,8 +47,10 @@ Or:
 * Wp 6.0.3 compatibility, Resizable fixed
 = 2.2.0 =
 * Wp 6.8 compatibility, Resize max size limit
-= 2.2.0 =
+= 2.3.0 =
 * Wp 6.9 compatibility, Bug fix
+= 2.3.1 =
+* Fixed readme description language detection and corrected installation instructions.
 
 == Upgrade Notice ==
 

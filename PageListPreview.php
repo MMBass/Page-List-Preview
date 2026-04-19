@@ -9,7 +9,7 @@ Plugin URI: https://github.com/MMBass/Page-List-Preview
 Description: Image preview for every page in wp admin pages list, no need to click 'View' anymore
 Author: Mendi Bass
 Author URI: https://github.com/MMBass
-Version: 2.3.0
+Version: 2.3.1
 License: GPL v2 or later
 Text Domain: page-list-preview 
 Domain Path: /languages
